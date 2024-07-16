@@ -79,3 +79,20 @@ const car = {
     console.log(make);
     console.log(model);
   
+    // Applying the spread operator on arrays
+
+    const originalArray = [1, 2, 3];
+const duplicateArray = [...originalArray];
+
+console.log(duplicateArray); // [1, 2, 3]
+
+
+// Exercise 4: Spread operator
+
+// Duplicate the following array using the spread operator and assign it to `controversialPizzaToppings`. Then, log the variable.
+
+const pizzaToppings2 = ['Pineapple', 'Olives', 'Anchovies'];
+
+// Your code here
+const controversialPizzaToppings = [...pizzaToppings2];
+console.log(controversialPizzaToppings);
