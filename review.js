@@ -229,6 +229,7 @@ console.log(taste);
 
 // 1. SET LANGUAGE
 
+//excercise 10
 // Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
 
 // "LANG is equal to localLangConfig or the default value of English."
@@ -259,3 +260,17 @@ console.log('User theme setting:', USER_THEME);
 
 //Review: Optional chaining
 
+//excercise 11
+
+// Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+  let cat = adventurer.cat?.name;
+  
+  console.log(cat);
+  
+  // We get an undefined error here because `cat` is not defined on `adventurer`.   
+    // Use optional chaining to prevent this error.
