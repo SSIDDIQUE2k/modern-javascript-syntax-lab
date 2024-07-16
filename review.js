@@ -130,5 +130,32 @@ const  cloneCar3 = { ...car3 };
 cloneCar3.model = 'q7';
 console.log(cloneCar3);
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------//
 
+// Dynamic keys in objects
+
+const fruitInventory = {
+    apples: 2,
+    oranges: 4,
+  };
+  
+  const selectedFruit = 'apples'; // Variable as a dynamic key
+  const selectedFruitCount = fruitInventory[selectedFruit];
+  
+  console.log(selectedFruitCount); // 2
+  
+// Exercise 6: Dynamic keys in objects
+
+// Create an object named userProfile. 
+
+
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+const propertyName = 'username';
+const userProfile = {
+    [propertyName]: 'Alex',
+  };
+  console.log(userProfile); // ask ashley about this one
   
