@@ -159,3 +159,22 @@ const userProfile = {
   };
   console.log(userProfile); // ask ashley about this one
   
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------//
+//Named exports: For exporting multiple items from a file:
+export const myNumber = 123;
+export const myString = 'Hello';
+
+// Default exports: For exporting a single item from a file:
+
+export default function superCoolFunction() {
+    /* ... */
+  }
+  
+// Using import, you can bring those exported items into another file.
+/*
+import { myNumber, myString } from './myData.js';
+import superCoolFunction from './superCoolFunction.js';
+import * as MyData from './myData.js';
+console.log(MyData.myNumber);
+console.log(MyData.myString);*/ 
+
