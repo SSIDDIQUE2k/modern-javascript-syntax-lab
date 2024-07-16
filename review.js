@@ -96,3 +96,39 @@ const pizzaToppings2 = ['Pineapple', 'Olives', 'Anchovies'];
 // Your code here
 const controversialPizzaToppings = [...pizzaToppings2];
 console.log(controversialPizzaToppings);
+
+// Applying the spread operator on objects
+
+const originalObject = {
+    foo: 'Hello',
+    bar: 100,
+  };
+
+
+  const clonedObject = { ...originalObject };
+  console.log('Clone: ', clonedObject); // { foo: 'Hello', bar: 100 }
+    // reference to the original object
+
+    const clonedObject2 = originalObject;
+clonedObject2.foo = 'Goodbye';
+
+console.log(originalObject); // { foo: 'Goodbye', bar: 100 }
+
+//   Exercise 5: Spread operator
+
+// Duplicate the following object and spread its values into a new variable `myCar`.
+
+const car3 = {
+    make: 'Audi',
+    model: 'q5',
+  };
+  
+  // Change the `model` property of `myCar` to 'q7'. Log both objects.
+  
+  // Your code here
+const  cloneCar3 = { ...car3 };
+cloneCar3.model = 'q7';
+console.log(cloneCar3);
+
+
+  
